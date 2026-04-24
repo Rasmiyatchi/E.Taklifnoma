@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&family=Great+Vibes&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-script: "Great Vibes", cursive;
+  
+  --color-wedding-bg: #FDFBF7;
+  --color-wedding-gold: #B8965B;
+  --color-wedding-gold-light: #dfcaa2;
+  --color-wedding-text: #2A2A2A;
+  --color-wedding-text-muted: #6B6B6B;
+}
+
+body {
+  background-color: var(--color-wedding-bg);
+  color: var(--color-wedding-text);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for an elegant touch */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-wedding-gold-light);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-wedding-gold);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.text-gold {
+  color: var(--color-wedding-gold);
+}
+
+.bg-gold {
+  background-color: var(--color-wedding-gold);
+}
+
+.border-gold {
+  border-color: var(--color-wedding-gold);
+}
